@@ -58,10 +58,10 @@ cacheSolve <- function(x, ...) {
   }
   data <- x$get()
   
-  # If the determinate is 0, there is no solution for this matrix. Stop and show
+  # If the determinat is 0, there is no solution for this matrix. Stop and show
   # a propert error message.
   if(det(data)==0) {
-    stop("The determinante of the matrix is 0. Matrix is not solvable.")
+    stop("The determinant of the matrix is 0. Matrix is not solvable.")
   }
   
   i <- solve(data, ...)
